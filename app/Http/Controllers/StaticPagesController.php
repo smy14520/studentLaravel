@@ -10,12 +10,14 @@ class StaticPagesController extends Controller
 
     public function home()
     {
-        return view('static_pages/home');
+
+        return view('static_pages.home')->with('title',"这是主页");
     }
 
     public function help()
     {
         return view('static_pages/help');
+
     }
 
     public function about()
